@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+*,
+body {
+  height: 99%;
+  width: 99.75%;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, sans-serif;
+  color: #444;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(54, 54, 54);
+}
+
+header {
+  order: 1;
+  position: absolute;
+  width: 99.75%;
+  height: 10%;
+
+  margin: auto;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  order: 2;
+
+  height: 84%;
+  bottom: 0;
+  margin: 0;
+  top: 12%;
+  bottom: 6%;
+}
+.right {
+  background-color: rgb(241, 241, 241);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0;
+}
+
+.left {
+  background-color: rgb(207, 205, 205);
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+}
+
+.tabs {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 4% 5%;
+}
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1%;
+  justify-content: flex-start;
+}
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  height: 3%;
+  order: 3;
+  bottom: 0;
+  margin: 0;
+  align-content: center;
+}
+
+button {
+  margin: 0;
+  height: 10%;
+  width: 100%;
+  display: flex;
+}
+
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 391;
+  font-size: 19px;
+  color: #000000;
+  background-color: rgb(207, 205, 205);
+
+  border: none;
+
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #fff;
+}
+
+.btn:hover {
+  background-color: #fff;
+
+  border: none;
+}
+
+h1,
+.now,
+.today,
+.toweek {
+  justify-content: center;
+  color: #000000;
+  height: 15%;
+  margin-bottom: 10px;
+  position: absolute;
+}
+
+#addTask {
+  position: relative;
+  width: 50%;
+  display: flex;
+  padding: 1%;
+  margin-top: 5%;
+}
+
+.taskText {
+  width: 50%;
+  display: flex;
+  padding: 1%;
+  margin-top: 5%;
+  flex-direction: column;
+  padding: 1px 1px;
+  position: relative;
+  display: none;
+  height: auto;
+}
+
+.addcan {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  display: none;
+  position: relative;
+  height: 100%;
+}
+
+.textbox {
+  width: 99%;
+  height: auto;
+}
+
+.add,
+.cancel {
+  height: auto;
+  font-family: Roboto, sans-serif;
+  font-weight: 391;
+  font-size: 19px;
+  color: #000000;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.add {
+  background-color: rgba(1, 134, 1, 0.589);
+}
+.add:hover {
+  background-color: rgba(0, 128, 0, 0.822);
+}
+
+.cancel {
+  background-color: rgba(199, 5, 5, 0.493);
+}
+.cancel:hover {
+  background-color: rgba(199, 5, 5, 0.658);
+}
+
+.tasklist {
+  height: auto;
+  position: relative;
+  left: 0;
+  top: 12%;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+.delete {
+  display: flex;
+  justify-content: center;
+  width: 5%;
+  opacity: 0%;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 49%;
+  height: auto;
+  padding: 10px;
+}
+
+li:hover {
+  display: flex;
+  background-color: rgba(170, 170, 170, 0.288);
+  border-radius: 5px;
+}
+
+li:hover > .delete {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.today {
+  display: none;
+}
+
+.toweek {
+  display: none;
+}
+
+.listed {
+  width: 95%;
+}
+
+#id_0 {
+  display: none;
+}
+
+/* .now,
+.today,
+.toweek,
+#addTask {
+  display: none;
+} */
